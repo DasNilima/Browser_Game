@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Open+Sans:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory-Game</title>
+</head>
+<body>
+    <h1 class="title">Peek-A-Boo</h1>
+    <h2 class="sub-title">Find and Match the Pair</h2>
+    <div class="image-container">
+        <img src="/Assets/images/banner_image.jpg" alt="banner">
+        <div class="image-info-container">
+            <div class="card-info">
+                Timer  <span id="time-left"> 100</span>
+            </div>
+            <div class="card-info">
+                Score <span id="flips"> 0</span>
+            </div>
+        </div>    
+    </div>
+    <video id="background-video" autoplay loop muted poster="/Assets/video.mp4">
+        <source src="/Assets/video.mp4" type="video/mp4">
+    </video>
+    <div class="display-text">
+        <div class="overlay-text visible">
+            Click to Play
+        </div>
+        <div id="game-over-text" class="overlay-text ">
+            GAME OVER<span class="overlay-text-small">Click to Restart</span>
+        </div>
+        <div id="win-text" class="overlay-text ">
+            WIN <span class="overlay-text-small">Click to Restart</span>
+        </div>
+    </div>
+<div class="game-container">
+    <div class="card">
+        <div class="card-back card-face">
+            <img class="peekboo" src="Assets/images/card-back.jpeg">
+        </div>
+        <div class="card-front card-face">
+            <img class="card-value" src="Assets/images/img-1.png">
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-back card-face">
+            <img class="peekboo" src="Assets/images/card-back.jpeg">
+        </div>
+        <div class="card-front card-face">
+            <img class="card-value" src="Assets/images/img-2.png">
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-back card-face">
+        <img class="peekboo" src="Assets/images/card-back.jpeg">
+        </div>
+        <div class="card-front card-face">
+        <img class="card-value" src="Assets/images/img-3.png">
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-back card-face">
+        <img class="peekboo" src="Assets/images/card-back.jpeg">
+        </div>
+        <div class="card-front card-face">
+        <img class="card-value" src="Assets/images/img-4.png">
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-back card-face">
+        <img class="peekboo" src="Assets/images/card-back.jpeg">
+        </div>
+        <div class="card-front card-face">
+        <img class="card-value" src="Assets/images/img-5.png">
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-back card-face">
+        <img class="peekboo" src="Assets/images/card-back.jpeg">
+        </div>
+        <div class="card-front card-face">
+        <img class="card-value" src="Assets/images/img-6.png">
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-back card-face">
+        <img class="peekboo" src="Assets/images/card-back.jpeg">
+        </div>
+        <div class="card-front card-face">
+        <img class="card-value" src="Assets/images/img-7.png">
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-back card-face">
+        <img class="peekboo" src="Assets/images/card-back.jpeg">
+        </div>
+        <div class="card-front card-face">
+        <img class="card-value" src="Assets/images/img-8.png">
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-back card-face">
+            <img class="peekboo" src="Assets/images/card-back.jpeg">
+        </div>
+        <div class="card-front card-face">
+            <img class="card-value" src="Assets/images/img-1.png">
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-back card-face">
+            <img class="peekboo" src="Assets/images/card-back.jpeg">
+        </div>
+        <div class="card-front card-face">
+        <img class="card-value" src="Assets/images/img-2.png">
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-back card-face">
+            <img class="peekboo" src="Assets/images/card-back.jpeg">
+        </div>
+        <div class="card-front card-face">
+            <img class="card-value" src="Assets/images/img-3.png">
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-back card-face">
+            <img class="peekboo" src="Assets/images/card-back.jpeg">
+        </div>
+        <div class="card-front card-face">
+            <img class="card-value" src="Assets/images/img-4.png">
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-back card-face">
+            <img class="peekboo" src="Assets/images/card-back.jpeg">
+        </div>
+        <div class="card-front card-face">
+            <img class="card-value" src="Assets/images/img-5.png">
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-back card-face">
+            <img class="peekboo" src="Assets/images/card-back.jpeg">
+        </div>
+        <div class="card-front card-face">
+            <img class="card-value" src="Assets/images/img-6.png">
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-back card-face">
+            <img class="peekboo" src="Assets/images/card-back.jpeg">
+        </div>
+        <div class="card-front card-face">
+            <img class="card-value" src="Assets/images/img-7.png">
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-back card-face">
+            <img class="peekboo" src="Assets/images/card-back.jpeg">
+        </div>
+        <div class="card-front card-face">
+            <img class="card-value" src="Assets/images/img-8.png">
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
