@@ -2,11 +2,11 @@
 // Add methods to five properties that extends the functionality of those sounds
 class AudioAssets {
     constructor() {
-        this.bgMusic = new Audio('Assets/Audio/bgMusic.mp3');
-        this.flipSound = new Audio('Assets/Audio/flip.wav');
-        this.matchSound = new Audio('Assets/Audio/match.wav');
-        this.winSound = new Audio('Assets/Audio/win.wav');
-        this.gameOverSound = new Audio('Assets/Audio/gameOver.wav');
+        this.bgMusic = new Audio('assets/audio/bgMusic.mp3');
+        this.flipSound = new Audio('assets/audio/flip.wav');
+        this.matchSound = new Audio('assets/audio/match.wav');
+        this.winSound = new Audio('assets/audio/win.wav');
+        this.gameOverSound = new Audio('assets/audio/gameOver.wav');
         this.bgMusic.volume = 0.5; 
         this.bgMusic.loop = true;
     }
